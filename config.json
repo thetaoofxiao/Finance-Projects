@@ -1,0 +1,52 @@
+{
+  "engine_version": "1.0.0",
+  "baseline_days": 90,
+  "news_baseline_days": 55,
+  "attention_windows_days": {"3d": 3, "2w": 14, "1m": 30},
+  "price_windows_trading_days": {"3d": 3, "2w": 10, "1m": 21},
+  "source_weights": {"wiki": 0.5, "news": 0.3, "trends": 0.2},
+  "news_top_n": 60,
+  "trends_top_n": 20,
+  "reddit_pages": 5,
+  "thresholds": {
+    "peak_attn_2w": 2.0,
+    "peak_exret_1m": 0.10,
+    "underfire_attn_2w": 1.5,
+    "underfire_exret_1m": -0.10,
+    "confirmed_attn_2w_min": 1.0,
+    "confirmed_exret_1m_min": 0.0,
+    "confirmed_dist52_min": -0.10,
+    "early_attn_3d": 1.5,
+    "early_accel": 1.0,
+    "early_abs_exret_2w_max": 0.05,
+    "fading_attn_1m": 1.0,
+    "fading_drop": 1.0,
+    "insider_sell_flag_usd": 1000000,
+    "wl_momentum_top_pct": 0.10
+  },
+  "watchlist": [
+    {"ticker": "RITM", "name": "Rithm Capital", "wiki": "Rithm_Capital", "sector": "Financials"},
+    {"ticker": "SPCX", "name": "SpaceX", "wiki": "SpaceX", "sector": "Industrials"},
+    {"ticker": "CRWV", "name": "CoreWeave", "wiki": "CoreWeave", "sector": "Information Technology"},
+    {"ticker": "NBIS", "name": "Nebius Group", "wiki": "Nebius_Group", "sector": "Information Technology"},
+    {"ticker": "ASTS", "name": "AST SpaceMobile", "wiki": "AST_SpaceMobile", "sector": "Communication Services"},
+    {"ticker": "RKLB", "name": "Rocket Lab", "wiki": "Rocket_Lab", "sector": "Industrials"},
+    {"ticker": "IREN", "name": "IREN", "wiki": "IREN_(company)", "sector": "Information Technology"},
+    {"ticker": "TSM", "name": "TSMC", "wiki": "TSMC", "sector": "Information Technology"},
+    {"ticker": "ASML", "name": "ASML Holding", "wiki": "ASML_Holding", "sector": "Information Technology"},
+    {"ticker": "GME", "name": "GameStop", "wiki": "GameStop", "sector": "Consumer Discretionary"}
+  ],
+  "news_query_overrides": {
+    "AAPL": "\"Apple Inc\"",
+    "AMZN": "\"Amazon.com\"",
+    "META": "\"Meta Platforms\"",
+    "GOOGL": "\"Alphabet Inc\"",
+    "GOOG": "\"Alphabet Inc\"",
+    "TGT": "\"Target Corp\"",
+    "V": "\"Visa Inc\"",
+    "MA": "\"Mastercard\"",
+    "ORCL": "\"Oracle Corp\"",
+    "GE": "\"GE Aerospace\"",
+    "BRK.B": "\"Berkshire Hathaway\""
+  }
+}
